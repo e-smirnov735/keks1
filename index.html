@@ -7,27 +7,44 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Denim shop</title>
   </head>
+
   <body>
-    <section class="main-header">
+    <header class="main-header">
+      <nav class="main-header-nav container">
+        <ul class="site-navigation">
+          <li><a href="#">Woman</a></li>
+          <li><a href="#">Man</a></li>
+          <li><a href="#">New</a></li>
+        </ul>
+        <div class="main-header-logo"><a href="#">Nîmes</a></div>
+        <nav class="user-navigation">
+          <a href="#"><img src="./img/icon/search.png" width="20" height="20" alt="поиск" /></a>
+          <a href="#"><img src="./img/icon/cart.png" width="20" height="20" alt="корзина" /></a>
+        </nav>
+      </nav>
+    </header>
+
+    <section class="main-promo">
       <div class="container">
-        <header class="header">
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item"><a href="#">Woman</a></li>
-              <li class="nav__item"><a href="#">Man</a></li>
-              <li class="nav__item"><a href="#">New</a></li>
-            </ul>
-          </nav>
-          <div class="logo"><a href="#">Nîmes</a></div>
-          <div class="user-menu">
-            <a href="#"><img src="./img/icon/search.png" alt="поиск" /></a>
-            <a href="#"><img src="./img/icon/cart.png" alt="корзина" /></a>
+        <main class="promo-left">
+          <div class="promo">
+            <div class="promo-subtitle">The quality you deserve</div>
+            <h1 class="promo-text">DENIM</h1>
+            <button class="promo-button">Check new collection</button>
+            <a class="down-arrow" href="#"
+              ><img src="./img/arrow_down.png" alt="вниз"
+            /></a>
           </div>
-        </header>
+          <div class="promo-right">
+            <div class="foto-block">
+              <div class="foto-decoration"></div>
+              <img src="./img/foto.jpg" alt="" />
+              <div class="foto-decoration"></div>
+            </div>
+          </div>
+        </main>
       </div>
     </section>
-
-    <section class="main-main"></section>
 
     <footer class="main-footer"></footer>
   </body>

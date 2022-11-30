@@ -1,5 +1,6 @@
 /* inport fonts */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 
 * {
@@ -13,14 +14,26 @@ a {
     text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
 
 ul {
     list-style: none;
 }
 
 body {
+    min-width: 1200px;
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
+    line-height: 21px;
     font-weight: 500;
     color: #151C22;
     background-color: aqua;
@@ -30,8 +43,8 @@ body {
     margin: 0 auto;
     max-width: 1248px;
     height: inherit;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* Header */
@@ -42,32 +55,117 @@ body {
 
 }
 
-.header{
+.main-header-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: inherit;
 }
 
-.nav__list {
+.site-navigation {
     display: flex;
     gap: 35px;
+    width: 400px;
 }
 
-.logo {
+.main-header-logo {
     font-size: 24px;
     font-weight: 800;
 }
 
-.user-menu {
+.user-navigation{
     display: flex;
+    justify-content: flex-end;
     gap: 35px;
+    width: 400px;
 
 }
 
-.user-menu img {
-    width: 20px;
- 
+/* Main main */
+.main-promo {
+    height: 617px;
+    background-color: #F1F2F4;
+
 }
 
+.promo-left {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.down-arrow {
+
+    position: absolute;
+    left: 10px;
+    bottom: 50px;
+}
+
+.down-arrow img {
+    width: 10px;
+    height: 27px;
+}
+
+.promo-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: #727A82;
+    ;
+}
+
+.promo-text {
+    font-family: 'Anton', sans-serif;
+    font-size: 128px;
+    font-weight: 400;
+    line-height: 0.9;
+    margin: 15px 50px 50px 0;
+}
+
+.promo-button {
+    color: white;
+    background-color: #151C22;
+    border: none;
+    padding: 24px 27px;
+    margin-left: 10px;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.promo-right {
+    padding-left: 50px;
+    width: 430px;
+    height: 1;
+    z-index: 3;
+}
+
+.foto-block {
+    position: relative;
+}
+
+.foto-block .foto-decoration:first-child {
+    background-image: url('/img/foto_bg.png');
+    position: absolute;
+    top: -47px;
+    left: -50px;
+    width: 232px;
+    height: 176px;
+
+}
+
+.foto-block img {
+    position: relative;
+    z-index: 10;
+}
+
+.foto-block .foto-decoration:last-child {
+    background-image: url('/img/foto_bg.png');
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    position: absolute;
+    right: -116px;
+    bottom: -47px;
+    width: 232px;
+    height: 176px;
+}
